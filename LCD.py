@@ -1,5 +1,5 @@
 
-# Import necessary libraries for commuunication and display use
+# Import necessary libraries for commuunication and display use'
 import lcddriver
 import time
 class lcd:
@@ -7,6 +7,7 @@ class lcd:
 
     # Load the driver and set it to "display"
     # If you use something from the driver library use the "display." prefix first
+        #print("LCD commented out")
         self.display = lcddriver.lcd()
 
     def writeMessage(self,message,position):
@@ -18,6 +19,7 @@ class lcd:
                 print("Writing to display")
                 self.display.lcd_display_string(message, position) # Write line of text to first line of display
                 #  Give time for the message to be read
+                time.sleep(3)
 
         except KeyboardInterrupt: # If there is a KeyboardInterrupt (when you press ctrl+c), exit the program and cleanup
             print("Cleaning up!")

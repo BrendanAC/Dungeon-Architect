@@ -222,12 +222,3 @@ class Map:
                 else:
                     print ("Error")
         print(NewMap)
-
-
-
-
-
-    def MapDemo(self):
-        Servo1=ccServoControl(11)
-        Servo3=ServoControl(13)
-        Servo2=ServoControl(15)
